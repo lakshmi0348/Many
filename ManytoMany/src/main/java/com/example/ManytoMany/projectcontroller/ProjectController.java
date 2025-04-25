@@ -15,7 +15,7 @@ public class ProjectController {
     {
         return ResponseEntity.ok(projectService.getusersbyid(id));
     }
-    @GetMapping("allprojects")
+    @GetMapping("allProjects")
     public ResponseEntity<List<Project>> getAllProjects()
     {
         return ResponseEntity.ok(projectService.getallusers());

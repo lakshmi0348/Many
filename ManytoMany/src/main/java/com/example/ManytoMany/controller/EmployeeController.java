@@ -21,13 +21,13 @@ public class EmployeeController {
                 map(ResponseEntity::ok).
                 orElse(ResponseEntity.noContent().build());
     }
-    @GetMapping("/getallEmployee")
-    public ResponseEntity<List<Employee>> getAlldetails()
+    @GetMapping("/getAllEmployee")
+    public ResponseEntity<List<Employee>> getAllDetails()
     {
         return ResponseEntity.ok(employeeService.getallEmployees());
     }
     @PostMapping("/saveEmp")
-    public ResponseEntity<Employee> savedetails(@RequestBody Employee employee)
+    public ResponseEntity<Employee> saveDetails(@RequestBody Employee employee)
     {
         return ResponseEntity.ok(employeeService.saveEmp(employee));
     }
